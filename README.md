@@ -1,0 +1,1 @@
+Random assortment of stuff I have made in Unity which I don't version control elsewhere. Most of these are likely to be one-off experiments or attempts at making something which didn't fully work out for one reason or another.
