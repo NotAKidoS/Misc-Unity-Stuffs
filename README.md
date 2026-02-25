@@ -2,20 +2,33 @@ Random assortment of stuff I have made in Unity which I don't version control el
 
 Each thing will have a license associated with it in its source or folder.
 
-**NAK.Contacts**
+### NAK.Contacts
 
-Clean-room replication of VRCs contacts system with added functionality which I had made canny posts for back when it initially released.
+Clean-room reimplementation of VRCs contacts system with added functionality which I had made canny posts for back when it initially released.
 
-**VisualClone**
+I have not actually tested if they replicate contacts as I have not touched the VRCSDK in years.
 
-Performant head-hiding solution which scales even on fucked-up monstrosities of an avatar with hundreds of renderers on it.
+**Differences from VRC:**
+- Can define a static value for Contant receiver type
+- Added ProximityReceiverToSender and ProximityCenterToCenter receiver types
+  - The original canny post has since been lost or deleted :(
+  - [[Request] Option for proximity contacts to measure inverse to how they do now](<https://vrchat.canny.io/open-beta/p/request-option-for-proximity-contacts-to-measure-inverse-to-how-they-do-now>)
+- Added CopyValueFromSender receiver type
+- Added VelocityReceiver, VelocitySender, and VelocityMagnitude receiver types
+- Does not have the quirk of receivers sticking to senders when disabled (VRLabs contact tracker tech)
+  - I don't know how they did that tbh, was considering exposing as an actual feature here like a "lock"
+- probably bunch more that i forgor
+
+### VisualClone
+
+Unity VR avatar head hiding script. Meant to be as performant as possible without scaling bones (jank), swapping bones (alloc), forceRecalculationPerRender (does not scale), or a dedicated shadow clone.
 
 Originally hosted on gist which was impossible to discover:
+
 https://gist.github.com/NotAKidoS/662e3b0160461866b4b62eaf911b147a/
->  Unity VR avatar head hiding script. Meant to be as performant as possible without scaling bones (jank), swapping bones (alloc), forceRecalculationPerRender (does not scale), or a dedicated shadow clone. Please see comments for ramblings.
 
 ---
 
 Here is the block of text where I tell you it's not my fault if you're bad at Unity.
 
-> Use of this Unity Script is done so at the user's own risk and the creator cannot be held responsible for any issues arising from its use.
+> Use of these Unity Scripts is done so at the user's own risk and the creator cannot be held responsible for any issues arising from its use.
