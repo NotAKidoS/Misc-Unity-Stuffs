@@ -2,6 +2,13 @@ Random assortment of stuff I have made in Unity which I don't version control el
 
 Each thing will have a license associated with it in its source or folder.
 
+### AnimationJobNetIk
+
+Experiment with using an animation job to apply interpolated muscle values from the frame prior to remote avatars.
+
+An interpolation step would run over the course of an entire frame and apply the next frame via animation job, solving a few issues like remote player positions being up-to-date at
+beginning of frame instead of at end of frame.
+
 ### NAK.Contacts
 
 Clean-room reimplementation of VRCs contacts system with added functionality which I had made canny posts for back when it initially released.
@@ -18,6 +25,8 @@ I have not actually tested if they replicate contacts as I have not touched the 
 - Does not have the quirk of receivers sticking to senders when disabled (VRLabs contact tracker tech)
   - I don't know how they did that tbh, was considering exposing as an actual feature here like a "lock"
 - probably bunch more that i forgor
+
+Note: You should make sure the system is hooked to run after constraint solving. I did not do that in my thing because I forgot until now.
 
 ### VisualClone
 
